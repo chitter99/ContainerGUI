@@ -11,7 +11,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import ch.chitters.container.events.ContainerItemClickEvent;
 
 public class ContainerItem {
-	protected Material material = Material.AIR;
+	protected Material material = Material.BARRIER;
 	protected int amount = 1;
 	protected String displayName;
 	protected List<String> lore = new ArrayList<String>();
