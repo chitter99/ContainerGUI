@@ -1,0 +1,11 @@
+name: ContainerGUI
+description: Framework for Inventory Gui's
+version: 1.0
+author: chitter99
+
+main: ch.chitters.container.Main
+
+commands:
+  container:
+    desciption: This command opens an example inventory gui
+    usage: /container
