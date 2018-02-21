@@ -7,7 +7,7 @@ Framework for easily creating Inventory User Interfaces.
 HelloWorldPlugin.java
 ```java
 class HelloWorldPlugin extends JavaPlugin {
-  @override
+  @Override
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
     new HelloWorldContainer(this, (Player) sender).show();
     return true;
@@ -22,7 +22,7 @@ class HelloWorldContainer extends Container {
     super(plugin, player);
   }
   
-  @override
+  @Override
   public void onLoad() {
     title = "Hello World";
     put(new ContainerItem().type(Material.PAPER).name("Hello World"));
@@ -35,20 +35,19 @@ class HelloWorldContainer extends Container {
 ClickMeContainerItem.java
 ```java
 class ClickMeContainerItem extends ContainerItem {
-  @override
+  @Override
   public void onLoad() {
     displayName = "Hello " + container.getPlayer().getDisplayName();
     material = Material.CHEST;
     lore.add("Just click me!");
   }
-  @override
+  @Override
   public void onClick(ContainerItemClickEvent event) {
     container.getPlayer().getInventory().addItem(new ItemStack(Material.BAKED_POTATO));
     container.getPlayer().sendMessage("Here you go!");
   }
 }
 ```
-
 
 # Installation
 To install this Framework in your Spigot / Bukkit Server just put the latest Jar in the plugin directory.
