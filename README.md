@@ -26,11 +26,28 @@ class HelloWorldContainer extends Container {
   public void onLoad() {
     title = "Hello World";
     put(new ContainerItem().type(Material.PAPER).name("Hello World"));
+    put(new ClickMeContainerItem());
     last(new CloseContainerItem().type(Material.BARRIER).name("Close"));
   }
 }
 ```
 
+ClickMeContainerItem.java
+```java
+class ClickMeContainerItem extends ContainerItem {
+  @override
+  public void onLoad() {
+    displayName = "Hello " + container.getPlayer().getDisplayName();
+    material = Material.CHEST;
+    lore.add("Just click me!");
+  }
+  @override
+  public void onClick(ContainerItemClickEvent event) {
+    container.getPlayer().getInventory().addItem(new ItemStack(Material.BAKED_POTATO));
+    container.getPlayer().sendMessage("Here you go!");
+  }
+}
+```
 
 
 # Installation
