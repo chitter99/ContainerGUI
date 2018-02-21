@@ -44,6 +44,10 @@ public abstract class Container {
 		this.put(item, new ContainerVector(x, y));
 	}
 	
+	public void last(ContainerItem item) {
+		this.put(item, new ContainerVector(this.size - 1));
+	}
+	
 	public void put(ContainerItem item, ContainerVector vector) {
 		item.assign(this, vector);
 		this.items.add(item);

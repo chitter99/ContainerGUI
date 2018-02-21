@@ -13,7 +13,7 @@ public class ContainerVector {
 	public ContainerVector(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.index = y * 3 + x;
+		this.index = y * 9 + x;
 	}
 	
 	public int getX() {
