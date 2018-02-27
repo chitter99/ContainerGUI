@@ -2,7 +2,7 @@
 Framework for easily creating Inventory User Interfaces.
 
 # Example
-![Example of Framework](https://github.com/chitter99/ContainerGUI/blob/master/screenshots/example1.png?raw=true)
+![Example of Framework](https://github.com/chitter99/ContainerGUI/blob/master/screenshots/intro.gif?raw=true)
 
 Take a look at the getting started guide in the wiki, if you want to know how the example is made.
 
